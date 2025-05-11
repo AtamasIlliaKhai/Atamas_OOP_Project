@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atamas_OOP_Project", "Atamas_OOP_Project\Atamas_OOP_Project.csproj", "{4CC431AC-5739-4710-B492-B6ECDD73F3A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atamas_OOP_Project.Tests", "Atamas_OOP_Project.Tests\Atamas_OOP_Project.Tests.csproj", "{1C428269-2CC4-42FB-BD50-BFEC46F83896}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC431AC-5739-4710-B492-B6ECDD73F3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC431AC-5739-4710-B492-B6ECDD73F3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC431AC-5739-4710-B492-B6ECDD73F3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC431AC-5739-4710-B492-B6ECDD73F3A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C428269-2CC4-42FB-BD50-BFEC46F83896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C428269-2CC4-42FB-BD50-BFEC46F83896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C428269-2CC4-42FB-BD50-BFEC46F83896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C428269-2CC4-42FB-BD50-BFEC46F83896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E94868C2-0F26-4DA8-B88E-FE1D76C096D6}
+	EndGlobalSection
+EndGlobal
