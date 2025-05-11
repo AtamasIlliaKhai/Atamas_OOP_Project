@@ -8,7 +8,16 @@ namespace Atamas_OOP_Project.Models
 {
     public class Subject
     {
-        public int SubjectId { get; set; }
+        private static int _lastId = 0;
+
+        public int SubjectId { get; private set; }
+
+        public Subject()
+        {
+            SubjectId = ++_lastId;
+        }
+
         public string Name { get; set; }
     }
+
 }

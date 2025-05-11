@@ -10,7 +10,7 @@ namespace Atamas_OOP_Project.Models
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public bool IsAvailable { get; set; }
+        public bool IsAvailable { get; set; } = true;
         public List<(DateTime Start, DateTime End)> TimeSlots { get; set; } = new();
     }
 }

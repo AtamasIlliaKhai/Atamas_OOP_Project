@@ -8,8 +8,8 @@ namespace Atamas_OOP_Project.Models
 {
     public abstract class User
     {
-        public Guid UserId { get; set; } = Guid.NewGuid(); // ← Додай
-        public string Name { get; set; }
+        public int UserId { get; set; }
+        public string Name { get; set; } = string.Empty;
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Email { get; set; }
         public string PasswordHash { get; set; }
