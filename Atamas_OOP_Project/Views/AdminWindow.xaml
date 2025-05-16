@@ -1,0 +1,32 @@
+﻿<Window x:Class="Atamas_OOP_Project.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Адмін панель" Height="500" Width="600">
+    <Grid Margin="20">
+        <StackPanel>
+
+            <TextBlock Text="Інформація про адміністратора:" FontSize="18" FontWeight="Bold" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Ім'я:" FontWeight="Bold"/>
+            <TextBlock x:Name="NameTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Прізвище:" FontWeight="Bold"/>
+            <TextBlock x:Name="LastNameTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Email:" FontWeight="Bold"/>
+            <TextBlock x:Name="EmailTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Рівень доступу:" FontWeight="Bold"/>
+            <TextBlock x:Name="PermissionLevelTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Дата створення:" FontWeight="Bold"/>
+            <TextBlock x:Name="CreatedAtTextBlock" Margin="0 0 0 10"/>
+
+            <!-- Add Phone TextBlock if necessary -->
+            <TextBlock Text="Телефон:" FontWeight="Bold"/>
+            <TextBlock x:Name="PhoneTextBlock" Margin="0 0 0 10"/>
+
+            <Button Content="Вийти" Click="ExitButton_Click" HorizontalAlignment="Left" Width="100" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

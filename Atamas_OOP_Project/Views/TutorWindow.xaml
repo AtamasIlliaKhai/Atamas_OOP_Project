@@ -1,0 +1,39 @@
+﻿<Window x:Class="Atamas_OOP_Project.Views.TutorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tutor Panel" Height="500" Width="600">
+    <Grid Margin="20">
+        <StackPanel>
+
+            <TextBlock Text="Інформація про викладача:" FontSize="18" FontWeight="Bold" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Ім'я:" FontWeight="Bold"/>
+            <TextBlock x:Name="NameTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Прізвище:" FontWeight="Bold"/>
+            <TextBlock x:Name="LastNameTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Email:" FontWeight="Bold"/>
+            <TextBlock x:Name="EmailTextBlock" Margin="0 0 0 10"/>
+
+            <!-- Added PhoneTextBlock -->
+            <TextBlock Text="Телефон:" FontWeight="Bold"/>
+            <TextBlock x:Name="PhoneTextBlock" Margin="0 0 0 10"/>
+
+            <!-- Added RateTextBlock -->
+            <TextBlock Text="Оплата за годину:" FontWeight="Bold"/>
+            <TextBlock x:Name="RateTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Рейтинг:" FontWeight="Bold"/>
+            <TextBlock x:Name="RatingTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Досвід роботи:" FontWeight="Bold"/>
+            <TextBlock x:Name="ExperienceTextBlock" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Предмети:" FontWeight="Bold" Margin="0 10 0 5"/>
+            <TextBlock x:Name="SubjectsTextBlock" TextWrapping="Wrap" Margin="0 0 0 10"/>
+
+            <Button Content="Вийти" Click="ExitButton_Click" HorizontalAlignment="Left" Width="100" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

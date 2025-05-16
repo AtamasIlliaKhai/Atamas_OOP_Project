@@ -8,7 +8,7 @@ namespace Atamas_OOP_Project.Interfaces
 {
     public interface IDataManager
     {
-        void Save(object data);
-        object Load();
+        void Save(object data, string fileName);
+        T Load<T>(string fileName);
     }
 }

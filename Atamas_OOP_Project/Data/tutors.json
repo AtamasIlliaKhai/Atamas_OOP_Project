@@ -1,0 +1,42 @@
+﻿[
+  {
+    "$type": "Atamas_OOP_Project.Models.Tutor, Atamas_OOP_Project",
+    "userId": 101,
+    "name": "Старший викладач",
+    "email": "tutor.math@university.edu",
+    "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+    "firstName": "Іван",
+    "lastName": "Франко",
+    "birthDate": "1975-03-25T00:00:00",
+    "phone": "+380672223344",
+    "hourlyRate": 450,
+    "rating": 4.9,
+    "yearsOfExperience": 15,
+    "subjects": [
+      {
+        "subjectId": 1,
+        "name": "Вища математика"
+      }
+    ]
+  },
+  {
+    "$type": "Atamas_OOP_Project.Models.Tutor, Atamas_OOP_Project",
+    "userId": 102,
+    "name": "Науковець",
+    "email": "tutor.physics@institute.edu",
+    "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+    "firstName": "Марія",
+    "lastName": "Кюрі",
+    "birthDate": "1980-09-12T00:00:00",
+    "phone": "+380503334455",
+    "hourlyRate": 500,
+    "rating": 5.0,
+    "yearsOfExperience": 20,
+    "subjects": [
+      {
+        "subjectId": 2,
+        "name": "Фізика"
+      }
+    ]
+  }
+]

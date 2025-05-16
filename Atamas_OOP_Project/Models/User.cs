@@ -1,39 +1,48 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Atamas_OOP_Project.Models
 {
+    [JsonObject(IsReference = false)]
     public abstract class User
     {
+        [JsonProperty("userId")]
         public int UserId { get; set; }
+
+        [JsonProperty("name")]
         public string Name { get; set; } = string.Empty;
+
+        [JsonIgnore]
         public Guid Id { get; set; } = Guid.NewGuid();
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime BirthDate { get; set; }
-        public string Phone { get; set; }
+
+        [JsonProperty("email")]
+        public string Email { get; set; } = string.Empty;
+
+        [JsonProperty("passwordHash")]
+        public string PasswordHash { get; set; } = string.Empty;
+
+        [JsonProperty("firstName")]
+        public string FirstName { get; set; } = string.Empty;
+
+        [JsonProperty("lastName")]
+        public string LastName { get; set; } = string.Empty;
+
+        [JsonProperty("birthDate")]
+        public DateTime BirthDate { get; set; } = new DateTime(2000, 1, 1);
+
+        [JsonProperty("phone")]
+        public string Phone { get; set; } = "+380000000000";
+
+        [JsonIgnore]
         public List<Notification> Notifications { get; set; } = new();
+
+        protected User() { }
 
         public virtual bool Authenticate(string email, string password)
         {
-            return Email == email && PasswordHash == password;
-        }
-
-        public void AddNotification(string title, string message)
-        {
-            Notifications.Add(new Notification
-            {
-                Title = title,
-                Message = message,
-                CreatedAt = DateTime.Now,
-                IsRead = false,
-                UserId = this.Id
-            });
+            return Email.Equals(email, StringComparison.OrdinalIgnoreCase)
+                && PasswordHash == password;
         }
     }
 }

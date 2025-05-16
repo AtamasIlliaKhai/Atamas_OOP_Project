@@ -1,0 +1,26 @@
+﻿<Window x:Class="Atamas_OOP_Project.Views.GuestBrowseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список викладачів" Height="500" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Background="#f0f0f0">
+        <StackPanel Margin="20">
+            <Button Content="Назад" HorizontalAlignment="Left" Width="80" 
+                    Click="BackButton_Click" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Список викладачів" 
+                       FontSize="24" FontWeight="Bold"
+                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <ListBox Name="TeachersListBox" FontSize="14">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap" 
+                                   Margin="5" Width="520"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

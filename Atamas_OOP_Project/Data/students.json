@@ -1,0 +1,70 @@
+﻿[
+    {
+      "$type": "Atamas_OOP_Project.Models.Student, Atamas_OOP_Project",
+      "userId": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "firstName": "John",
+      "lastName": "Doe",
+      "birthDate": "2000-01-01T00:00:00",
+      "phone": "+1234567890",
+      "gradeLevel": 10,
+      "subjects": [
+        {
+          "subjectId": 1,
+          "name": "Mathematics"
+        }
+      ],
+      "level": "Intermediate",
+      "balance": 100.00
+    },
+    {
+      "$type": "Atamas_OOP_Project.Models.Student, Atamas_OOP_Project",
+      "userId": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "birthDate": "2002-05-15T00:00:00",
+      "phone": "+1987654321",
+      "gradeLevel": 11,
+      "subjects": [
+        {
+          "subjectId": 2,
+          "name": "Physics"
+        },
+        {
+          "subjectId": 3,
+          "name": "Chemistry"
+        }
+      ],
+      "level": "Advanced",
+      "balance": 80.50
+    },
+    {
+      "$type": "Atamas_OOP_Project.Models.Student, Atamas_OOP_Project",
+      "userId": 3,
+      "name": "Андрій Петренко",
+      "email": "andrii@student.ua",
+      "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "firstName": "Андрій",
+      "lastName": "Петренко",
+      "birthDate": "2003-12-10T00:00:00",
+      "phone": "+380961112233",
+      "gradeLevel": 9,
+      "subjects": [
+        {
+          "subjectId": 4,
+          "name": "Історія"
+        },
+        {
+          "subjectId": 5,
+          "name": "Українська мова"
+        }
+      ],
+      "level": "Beginner",
+      "balance": 25.00
+    }
+  ]

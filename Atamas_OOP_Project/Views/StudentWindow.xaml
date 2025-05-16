@@ -1,0 +1,34 @@
+﻿<Window x:Class="Atamas_OOP_Project.Views.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Student Window" Height="500" Width="600">
+    <Grid Margin="20">
+        <StackPanel>
+
+            <TextBlock Text="Інформація про учня" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" />
+
+            <TextBlock Text="Ім'я:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.FirstName}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Прізвище:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.LastName}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Email:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.Email}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Рівень:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.Level}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Клас:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.GradeLevel}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Баланс:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CurrentStudent.Balance}" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Предмети:" FontWeight="Bold" Margin="0 10 0 5"/>
+            <ListBox ItemsSource="{Binding CurrentStudent.Subjects}" DisplayMemberPath="Name" Height="100"/>
+
+            <Button Content="Вийти" Click="ExitButton_Click" HorizontalAlignment="Left" Width="100" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
